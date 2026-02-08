@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Agile — гибкий подход к разработке</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="header-inner">
+    <div class="logo">Agile</div>
+
+    <nav class="nav">
+      <a href="#about">Agile</a>
+      <a href="#scrum">Scrum</a>
+      <a href="#kanban">Kanban</a>
+      <a href="#compare">Сравнение</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Agile - гибкий подход к управлению проектами</h1>
+    <p>Современная методология для быстрой и эффективной разработки</p>
+    <a href="#about" class="btn">Узнать больше</a>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <h2>Что такое Agile</h2>
+  <p class="section-text">
+    Agile - это подход к управлению проектами, основанный на итеративной
+    разработке, постоянной обратной связи и гибкой адаптации к изменениям.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Итеративность</h3>
+      <p>Работа ведётся небольшими этапами с регулярным результатом.</p>
+    </div>
+    <div class="card">
+      <h3>Гибкость</h3>
+      <p>Изменения приветствуются на любом этапе проекта.</p>
+    </div>
+    <div class="card">
+      <h3>Команда</h3>
+      <p>Взаимодействие и самоорганизация важнее строгих регламентов.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="scrum">
+  <h2>Scrum</h2>
+  <p class="section-text">
+    Scrum - одна из самых популярных методологий Agile. Работа делится на
+    спринты продолжительностью 2–4 недели.
+  </p>
+
+  <div class="cards">
+    <div class="card dark-card">
+      <h3>Product Owner</h3>
+      <p>Определяет приоритеты и ценность продукта.</p>
+    </div>
+    <div class="card dark-card">
+      <h3>Scrum Master</h3>
+      <p>Следит за соблюдением принципов Scrum.</p>
+    </div>
+    <div class="card dark-card">
+      <h3>Команда</h3>
+      <p>Самостоятельно реализует задачи спринта.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kanban">
+  <h2>Kanban</h2>
+  <p class="section-text">
+    Kanban - метод визуального управления задачами с помощью доски.
+  </p>
+
+  <div class="kanban">
+    <div class="kanban-col">
+      <h3>To Do</h3>
+      <span>Задача 1</span>
+      <span>Задача 2</span>
+    </div>
+    <div class="kanban-col">
+      <h3>In Progress</h3>
+      <span>Задача 3</span>
+    </div>
+    <div class="kanban-col">
+      <h3>Done</h3>
+      <span>Задача 4</span>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="compare">
+  <h2>Scrum vs Kanban</h2>
+
+  <div class="table-wrapper">
+    <table>
+      <tr>
+        <th>Критерий</th>
+        <th>Scrum</th>
+        <th>Kanban</th>
+      </tr>
+      <tr>
+        <td>Итерации</td>
+        <td>Спринты</td>
+        <td>Непрерывный поток</td>
+      </tr>
+      <tr>
+        <td>Роли</td>
+        <td>Фиксированные</td>
+        <td>Гибкие</td>
+      </tr>
+      <tr>
+        <td>Изменения</td>
+        <td>После спринта</td>
+        <td>В любой момент</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Связаться с нами</h2>
+
+  <form class="contact-form" id="contactForm">
+    <input type="text" id="name" placeholder="Имя">
+    <input type="email" id="email" placeholder="Email">
+    <button type="submit">Отправить</button>
+    <p class="form-message" id="formMessage"></p>
+  </form>
+</section>
+
+<button class="to-top" id="toTop">↑</button>
+<script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>
